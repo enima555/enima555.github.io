@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Admin’Facile - Vos démarches simplifiées</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin’Facile – Vos démarches, sans prise de tête</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f7f7f7; color:#333; }
-    header { background:#4A90E2; color:white; padding:20px; text-align:center; }
-    nav a { color:white; margin: 0 15px; text-decoration:none; font-weight:bold; }
-    section { padding:30px; max-width:900px; margin:auto; background:white; margin-top:20px; border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .btn { background:#4A90E2; color:white; padding:15px 30px; border:none; border-radius:5px; font-size:1.1rem; cursor:pointer; }
-    footer { text-align:center; padding:20px; font-size:0.9rem; color:#777; }
+    body { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; background: #F5F5F5; color: #333; }
+    header { background: #4A90E2; padding: 20px; text-align: center; color: white; }
+    header img { height: 60px; vertical-align: middle; }
+    header h1 { display: inline-block; margin: 0 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 2rem; }
+    nav ul { list-style: none; padding: 0; margin: 10px 0 0; display: flex; justify-content: center; }
+    nav li { margin: 0 15px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .hero { text-align: center; padding: 60px 20px; background: white; }
+    .hero h2 { margin: 0 0 10px; font-size: 1.8rem; }
+    .hero p { margin: 0 0 20px; }
+    .btn { background: #4A90E2; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; }
+    section { padding: 40px 20px; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card h3 { margin-top: 0; }
+    footer { text-align: center; padding: 20px; background: #333; color: #ccc; }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Admin’Facile" />
+    <h1>Admin’Facile</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#fonctionnement">Fonctionnement</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>Admin’Facile</h1>
-  <p>Vos démarches, sans prise de tête</p>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#fonctionnement">Fonctionnement</a>
-    <a href="#tarifs">Tarifs</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <div class="hero" id="hero">
+    <h2>Besoin d’aide pour vos démarches administratives ?</h2>
+    <p>Admin’Facile s’occupe de tout, en ligne et en toute confiance.</p>
+    <a class="btn" href="#contact">Je décris ma démarche</a>
+  </div>
 
-<section id="services">
-  <h2>Nos services</h2>
-  <ul>
-    <li>Demande de logement</li>
-    <li>Création d'entreprise (auto-entrepreneur, SARL, SASU...)</li>
-    <li>Renouvellement permis & carte grise</li>
-    <li>CAF / allocations familiales</li>
-    <li>Titres de séjour & naturalisation</li>
-    <li>Déclaration d'impôt</li>
-    <li>Changement d'adresse</li>
-    <li>Dossiers de mariage, divorce, succession</li>
-  </ul>
-</section>
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Pack Logement 2</h3>
+        <p>Saisie + relance (2 fois) de votre demande de logement.</p>
+        <strong>35 €</strong>
+      </div>
+      <div class="card">
+        <h3>Pack Permis 2</h3>
+        <p>Demande + relance et suivi de votre dossier de permis.</p>
+        <strong>42 €</strong>
+      </div>
+      <div class="card">
+        <h3>Pack Identité</h3>
+        <p>Renouvellement carte d’identité, passeport, titre de séjour.</p>
+        <strong>30 €</strong>
+      </div>
+      <div class="card">
+        <h3>Pack Céation de société</h3>
+        <p>Création tout type de société avec conseil pour choisir la forme</p>
+        <strong>A partir de 49€</strong>
+      </div>
+      <div class="card">
+        <h3>Aide à la rédaction</h3>
+        <p>Tout type de rédaction (lettres, réclamation ...)</p>
+        <strong>A partir de 10€</strong>
+      </div>
+      <!-- Ajoutez d’autres cards selon vos packs -->
+    </div>
+  </section>
 
-<section id="fonctionnement">
-  <h2>Comment ça marche ?</h2>
-  <ol>
-    <li>Choisissez votre démarche</li>
-    <li>Transmettez vos documents</li>
-    <li>Nous remplissons et transmettons votre dossier</li>
-    <li>Suivi et relances assurées jusqu’à obtention</li>
-  </ol>
-</section>
+  <section id="fonctionnement">
+    <h2>Comment ça marche ?</h2>
+    <ol>
+      <li>Choix du pack</li>
+      <li>Envoi des documents (upload ou courrier)</li>
+      <li>Vérification et rédaction</li>
+      <li>Envoi & suivi</li>
+      <li>Relance si nécessaire</li>
+    </ol>
+  </section>
 
-<section id="tarifs">
-  <h2>Nos tarifs</h2>
-  <p>À partir de 20€, sur devis selon la démarche.</p>
-  <p>Abonnement Tranquillité disponible : 60€/mois</p>
-</section>
+  <section id="tarifs">
+    <h2>Tarifs & Packs</h2>
+    <p>Découvrez nos offres à partir de 20 €, options express +15 €, abonnement Tranquillité 60 €/mois.</p>
+  </section>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <form>
-    <label>Votre nom :<br><input type="text" name="nom" required></label><br><br>
-    <label>Email :<br><input type="email" name="email" required></label><br><br>
-    <label>Votre démarche :<br><textarea name="demarche" rows="5" required></textarea></label><br><br>
-    <button type="submit" class="btn">Envoyer</button>
-  </form>
-</section>
+  <section id="contact">
+    <h2>Contact & Devis</h2>
+    <form action="#" method="post" netlify>
+      <label>Nom complet<br><input type="text" name="nom" required></label><br><br>
+      <label>Email<br><input type="email" name="email" required></label><br><br>
+      <label>Téléphone<br><input type="tel" name="tel"></label><br><br>
+      <label>Description de la démarche<br>
+      <textarea name="demarche" rows="4" required></textarea></label><br><br>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
 
-<footer>
-  <p>© 2025 Admin’Facile. Tous droits réservés.</p>
-</footer>
-
+  <footer>
+    <p>© 2025 Admin’Facile – Tous droits réservés</p>
+  </footer>
 </body>
 </html>
